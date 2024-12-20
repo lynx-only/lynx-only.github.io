@@ -1,0 +1,28 @@
+<i>Diablo 2 Restart 1.1 gore bee</i><br>
+<a href="/">Go back to /</a><br>
+You're gonna need erl chygh und xxd aynstalled,,,<br>
+Whut should be ayn current working directory:<br>
+<b>YourChar.d2s</b><br>
+<a href="/d2-chksumAider-Reads_pl.txt">d2-chksumAider-Reads.pl</a><br>
+<a href="/d2-charList-Safe_pl.txt">d2-charList-Safe.pl</a><br>
+T'en you go:<br>
+xxd CAH11.d2s &gt; trans.sstring<br>
+#now: edit trans.sstring to your liking <br>
+xxd -r trans.sstring &gt; CAH11.d2s<br>
+perl d2-chksumAider-Reads.pl<br>
+<b>Ayn conclusion,</b> you can write a new name aynto .d2s, while t'en renaming ,d2s non-dir, also change das skill numbers:<br>
+$ xxd CAH11.d2s<br>
+00000000: 55aa 55aa 6000 0000 4b03 0000 2213 d9f9  U.U.`...K..."...<br>
+00000010: 0000 0000 <b>4341 4831 3100 0000 0000 0000  ....CAH11.......<br>
+00000020: 0000 0000 0000 00</b>00 0210 1e01 0000 0000  ................<br>
+00000030: 4ab1 6567 ffff ffff ffff 0000 ffff 0000  J.eg............<br>
+...<br>
+000002f0: 0000 0000 0000 0000 0000 0000 0067 6600  .............gf.<br>
+00000300: 1e08 9081 800c 063c 6000 a005 1c00 6801  .......<`.....h.<br>
+00000310: 0800 3240 0280 0ca0 00e0 092c 0078 020c  ..2@.......,.x..<br>
+00000320: 02ff 0169 66<b>00 0102 0304 0506 0708 090a  ...if...........<br>
+00000330: 0b0c 0d0e 0f10 1112 1314 1516 1718 1900  ................<br>
+00000340: 0000</b> 004a 4d00 004a 4d00 00              ...JM..JM..<br>
+eit'ier way you gotta mend der der checksum<br>
+<b>TODO</b>: most letters ayn a name?,,,
+  

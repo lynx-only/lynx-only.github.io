@@ -1,0 +1,10 @@
+#!/usr/bin/perl
+
+for(33 .. 126){print chr($_);}
+
+
+my @a = ('a' .. 'z', 'A' .. 'Z', '0' .. '9');
+
+foreach my $l (@a){
+printf('%02x-%s ', ord($l), $l);
+}
