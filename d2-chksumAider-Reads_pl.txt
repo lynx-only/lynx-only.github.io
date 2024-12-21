@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 use v5.16;
 my $D2sDataFile = #'/home/hollawac/.winemario/drive_c/users/hollawac/Saved Games/Diablo II/CDH.d2s';
-'CAH11.d2s';
+'CAH11Dead.d2s';
 if(! -f $D2sDataFile){
   die "$D2sDataFile does not exist! What do you want to change?";
 }
