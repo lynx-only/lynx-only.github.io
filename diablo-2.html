@@ -1,20 +1,20 @@
 <i>Diablo 2 Restart 1.1 gore bee</i><br>
 <a href="index.html" >Go back to /</a><br>
-&#1081;ou're gonna need erl ch&#1081;gh und xxd a&#1081;nstalled,,,<br>
-Whut should be a&#1081;n current working director&#1081;:<br>
-<b>Y&#1081;ourChar.d2s</b><br>
-Co3&#1081; <a href="a1_pm.txt">a1.3m</a> a&#1081;n your 3rl @I&#1081;NC or use t'ese tools:<br>
-<a  href="d2-chksumAider-Reads_pl.txt">d2-chksumAi&#1081;der-Reads.pl</a><br>
+You're gonna need erl chygh und xxd aynstalled,,,<br>
+Whut should be ayn current working directory:<br>
+<b>YourChar.d2s</b><br>
+Co3y <a href="a1_pm.txt">a1.3m</a> ayn your 3rl @INC or use t'ese tools:<br>
+<a  href="d2-chksumAider-Reads_pl.txt">d2-chksumAider-Reads.pl</a><br>
 <a  href="d2-charList-Safe_pl.txt">d2-charList-Safe.pl</a><br>
-T'en &#1081;ou go:<br>
+T'en you go:<br>
 perl -Ma1=a_,b_,c_ -e '$_="CAH11Dead.d2s";a_();b_();c_();'<br>
-# which will echo out alread&#1081;-chksum, calculated-chksum, t'en xxd-out a&#1081;nitial section a' das non-director&#1081;<br>
+# which will echo out already-chksum, calculated-chksum, t'en xxd-out aynitial section a' das non-directory<br>
 # to edit das .d2s non-directory:<br>
 xxd CAH11.d2s &gt; trans.sstring<br>
 #now: edit trans.sstring to your liking <br>
 xxd -r trans.sstring &gt; CAH11.d2s<br>
-perl d2-chksumAi&#1081;der-Reads.pl<br>
-<b>A&#1081;n conclusion,</b> you can write a new name aynto .d2s, while t'en renaming ,d2s non-dir, also change das skill numbers:<br>
+perl d2-chksumAiyder-Reads.pl<br>
+<b>Ayn conclusion,</b> you can write a new name aynto .d2s, while t'en renaming ,d2s non-dir, also change das skill numbers:<br>
 $ xxd CAH11.d2s<br>
 00000000: 55aa 55aa 6000 0000 4b03 0000 2213 d9f9  U.U.`...K..."...<br>
 00000010: 0000 0000 <b>4341 4831 3100 0000 0000 0000  </b>....<b>CAH11.......<br>
@@ -27,6 +27,6 @@ $ xxd CAH11.d2s<br>
 00000320: 02ff 0169 66<b>00 0102 0304 0506 0708 090a  </b>...if<b>...........<br>
 00000330: 0b0c 0d0e 0f10 1112 1314 1516 1718 1900  ................<br>
 00000340: 0000</b> 004a 4d00 004a 4d00 00              ...JM..JM..<br>
-eit'ier wa&#1081; &#1081;ou gotta mend der der checksum<br>
-<b>TODO</b>: most letters a&#1081;n a name?,,, 13 add 2 Characters<br>
+eit'ier way you gotta mend der der checksum<br>
+<b>TODO</b>: most letters ayn a name?,,, 13 add 2 Characters<br>
       
