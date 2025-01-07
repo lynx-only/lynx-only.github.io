@@ -1,0 +1,15 @@
+#!/bin/bash
+
+#downloaded html is /^32-126*$/ or UNSUCCESS
+#all bytes 32-126 or UNGOOD
+for i in "$@"; do
+
+i="https://www.$i/"
+echo "$i"
+wget -O 1.html --clobber -q "$i"
+wc -l 1.html
+perl -e '-T "1.html" || exit 1' || echo ungood1
+perl -nl -e '@a=split //;foreach my $ch(@a){my $or=ord($ch);if($or<32||$or>126){if($or!=13){print($or);exit(1);}}}' 1.html || echo ungood2  
+
+done
+#cat 1.html | perl -C -nl -e 'chomp;s/[[:ascii:]]+//g;if($_){print}'  
