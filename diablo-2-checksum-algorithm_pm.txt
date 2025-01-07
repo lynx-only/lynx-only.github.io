@@ -1,18 +1,13 @@
 #!/usr/bin/perl
                
-use v5.16;
-#d
+use v5.16; 
 
 package a1;
 use warnings;
 use strict;
 
-use parent qw(Exporter);
-#require Exporter; #our @ISA = (
-#use Exporter qw/a b c/;
-
-our @EXPORT = qw//;
-our @EXPORT_OK = qw/a_ b_ c_/;    #QW
+use parent qw(Exporter); our @EXPORT = qw//;
+our @EXPORT_OK = qw/a_ b_ c_/; 
 our $all = undef;
 
 
