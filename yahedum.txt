@@ -1,0 +1,28 @@
+
+use v5.16; 
+use warnings;use strict; 
+open(my $ayn, '<bin.dat') or die '';
+open(my $out, '>chr.txt') or die '';
+binmode($ayn);
+my $one_byte;
+READ:
+{
+local $/ = \1;
+$one_byte = <$ayn>;
+}
+if(!defined($one_byte)){
+goto DONE;
+}
+printf '%02x', ord($one_byte);
+printf ${out} '%02x', ord($one_byte);
+goto READ;
+DONE:
+close(${out});undef ${out};
+close($ayn);undef $ayn;
+<STDIN>;exit 0;
+
+
+
+
+
+
